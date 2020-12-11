@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddHouseActivity">
+
+    <TextView
+        android:id="@+id/writeAddresss_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Skriv inn addresse"
+        app:layout_constraintBottom_toTopOf="@+id/addressInput_editText"
+        app:layout_constraintStart_toStartOf="@+id/addressInput_editText" />
+
+    <EditText
+        android:id="@+id/addressInput_editText"
+        android:layout_width="222dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint='"eg: Lambertseterveien 12"'
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/houseTypeInput_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Velg type"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup_houseTypes"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup_houseTypes" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_houseTypes"
+        android:layout_width="186dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addressInput_editText">
+
+        <RadioButton
+            android:id="@+id/radioButton_enebolig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enebolig"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_rekkehus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rekkehus"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton_leilighet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leilighet"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/priceInput_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint='"eg: 2570000"'
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup_houseTypes" />
+
+    <TextView
+        android:id="@+id/writePrice_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Skriv pris"
+        app:layout_constraintBottom_toTopOf="@+id/priceInput_editText"
+        app:layout_constraintStart_toStartOf="@+id/priceInput_editText" />
+
+    <TextView
+        android:id="@+id/writeCity_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Skriv inn by"
+        app:layout_constraintBottom_toTopOf="@+id/cityInput_editText"
+        app:layout_constraintStart_toStartOf="@+id/cityInput_editText" />
+
+    <EditText
+        android:id="@+id/cityInput_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint='"eg: Oslo"'
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceInput_editText" />
+
+    <EditText
+        android:id="@+id/sizeInput_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint='"eg: 82"'
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityInput_editText" />
+
+    <Button
+        android:id="@+id/submitHouse_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Add house"
+        app:backgroundTint="#00B8D4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sizeInput_editText" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Skriv inn størrelse i m²"
+        app:layout_constraintBottom_toTopOf="@+id/sizeInput_editText"
+        app:layout_constraintStart_toStartOf="@+id/sizeInput_editText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

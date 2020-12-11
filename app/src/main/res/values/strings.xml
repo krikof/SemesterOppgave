@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Semester Oppgave</string>
+
+    <string-array name="spinner_filter">
+        <item>No filter</item>
+        <item>Leilighet</item>
+        <item>Rekkehus</item>
+        <item>Enebolig</item>
+    </string-array>
+</resources>
